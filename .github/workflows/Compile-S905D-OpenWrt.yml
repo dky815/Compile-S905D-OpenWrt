@@ -10,7 +10,7 @@ env:
   SCRIPT_SH: script.sh
   CONFIG_SH: config.sh
   UPLOAD_FIRMWARE: true
-  TZ: Asia/Shanghai
+  TZ: America/Vancouver
   KERNEL_VERSION: 6.1.10
 
 jobs:
@@ -122,7 +122,7 @@ jobs:
         allowUpdates: true
         tag: ${{ env.tag_name }}
         commit: main
-        token: ${{ secrets.actions_release }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           Version used for compilation:
           ${{ env.useVersionInfo }}
@@ -140,4 +140,4 @@ jobs:
         keep_latest: 3
         delete_tags: true
       env:
-        GITHUB_TOKEN: ${{ secrets.actions_release }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

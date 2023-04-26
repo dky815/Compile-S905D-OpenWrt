@@ -130,7 +130,8 @@ jobs:
           Introduction of the firmware：
             Package date: ${{ env.PACKAGED_OUTPUTDATE }}
             Kernel version: ${{ env.KERNEL_VERSION }}
-            Default IP: 192.168.1.1 Default credentials: root/password
+            Default IP: 192.168.1.1
+            Default credentials: root/password
         artifacts: "${{ env.FIRMWARE }}/*,${{ env.PACKAGED_OUTPUTPATH }}/*"
 
     - name: Remove old Releases

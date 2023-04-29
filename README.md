@@ -1,5 +1,5 @@
 # Compile-S905D-OpenWrt
-Compile OpenWrt firmware for S905D using GitHub Actions.
+Use GitHub Actions to compile OpenWrt firmware for S905D with OpenWrt Buildroot.
 
 Download the firmware: [Releases](https://github.com/dky815/Compile-S905D-OpenWrt/releases).
 
